@@ -19,7 +19,7 @@ Requires [PHP](https://www.php.net/manual/en/install.php) and [Composer](https:/
 6. Generate Laravel APP_KEY `php artisan key:generate`
 7. Seed database with example data and admin `php artisan db:seed`
 8. Run migrations `php artisan migrate`
-9. Serve project locally `php artisan serve`, api now running at http://localhost:8000/api/coupon
+9. Serve project locally `php artisan serve`, api now running at http://localhost:8000/
 
 ## About Laravel
 
