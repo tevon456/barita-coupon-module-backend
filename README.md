@@ -7,6 +7,20 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Getting started
+
+Requires [PHP](https://www.php.net/manual/en/install.php) and [Composer](https://getcomposer.org/)
+
+1. Clone this repo to a local directory `git clone https://github.com/tevon456/barita-coupon-module-backend`
+2. Change directory to project `cd barita-coupon-module-backend`
+3. Run `composer install `
+4. Create database file `touch database/database.sqlite`
+5. Copy example env `cp .env.example .env`
+6. Generate Laravel APP_KEY `php artisan key:generate`
+7. Seed database with example data and admin `php artisan db:seed`
+8. Run migrations `php artisan migrate`
+9. Serve project locally `php artisan serve`, api now running at http://localhost:8000/api/coupon
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
