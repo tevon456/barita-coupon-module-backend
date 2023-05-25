@@ -21,6 +21,9 @@ Requires [PHP](https://www.php.net/manual/en/install.php) and [Composer](https:/
 8. Run migrations `php artisan migrate`
 9. Serve project locally `php artisan serve`, api now running at http://localhost:8000/
 
+#### Client repository
+https://github.com/tevon456/barita-coupon-module-client
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
