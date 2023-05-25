@@ -18,6 +18,7 @@ return new class extends Migration
             $table->dateTime('record_date')->nullable();
             $table->integer('status_id')->nullable();
             $table->foreign('status_id')->references('status_id')->on('status_codes');
+            $table->foreign('isin_code')->references('isin_code')->on('securities');
         });
     }
 
