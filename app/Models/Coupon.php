@@ -9,6 +9,7 @@ use App\Models\StatusCode;
 class Coupon extends Model
 {
     protected $table = 'coupons';
+    protected $primaryKey = 'coupon_id';
 
     /**
      * The attributes that are mass assignable.

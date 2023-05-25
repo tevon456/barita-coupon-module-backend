@@ -9,6 +9,7 @@ use App\Models\StatusCode;
 class Security extends Model
 {
     protected $table = 'securities';
+    protected $primaryKey = 'isin_code';
 
     /**
      * The attributes that are mass assignable.
