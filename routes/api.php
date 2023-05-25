@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\CouponController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,8 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function (Request $request) {
-    return response()->json([
-        'message' => 'hello world',
-    ], 200);
-})->name('unauthenticated');
+Route::group(['prefix' => 'coupon'], function () {
+    Route::get('/', [CouponController::class, 'index']);
+    Route::get('/search', [CouponController::class, 'search']);
+    Route::get('/{id}', [CouponController::class, 'show']);
+    Route::post('/', [CouponController::class, 'store']);
+    Route::delete('/{id}', [CouponController::class, 'destroy']);
+});
