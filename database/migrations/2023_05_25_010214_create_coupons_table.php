@@ -17,7 +17,7 @@ return new class extends Migration
             $table->text('isin_code')->nullable();
             $table->dateTime('payment_date')->nullable();
             $table->dateTime('record_date')->default(DB::raw('CURRENT_TIMESTAMP'))->nullable();
-            $table->integer('status_id')->nullable();
+            $table->integer('status_id')->default(1)->nullable(); // default pending
             $table->foreign('status_id')->references('status_id')->on('status_codes');
             $table->foreign('isin_code')->references('isin_code')->on('securities');
         });
