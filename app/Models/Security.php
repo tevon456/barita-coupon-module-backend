@@ -10,6 +10,8 @@ class Security extends Model
 {
     protected $table = 'securities';
     protected $primaryKey = 'isin_code';
+    public $incrementing = false;
+    protected $keyType = 'string';
 
     /**
      * The attributes that are mass assignable.
