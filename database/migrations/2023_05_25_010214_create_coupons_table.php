@@ -20,6 +20,7 @@ return new class extends Migration
             $table->integer('status_id')->default(1)->nullable(); // default pending
             $table->foreign('status_id')->references('status_id')->on('status_codes');
             $table->foreign('isin_code')->references('isin_code')->on('securities');
+            $table->timestamps();
         });
     }
 
